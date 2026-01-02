@@ -1,0 +1,18 @@
+binary "glacierEX"
+version "0.1"
+
+language "c++:20"
+
+add_includes (
+    Public
+)
+
+add_sources (
+    main.cc
+)
+
+put_flags (
+    darwin {
+        -framework CoreFoundation
+    }
+)
